@@ -1,7 +1,3 @@
-<p align="left">Hello World!!</p>
-
-###
-
 <h2 align="left">Hi 👋! My name is Kyle Grande and I'm a Software Engineer from New York City.</h2>
 
 ###
