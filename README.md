@@ -14,8 +14,4 @@
 
 ###
 
-<br clear="both">
-
-<img src="https://raw.githubusercontent.com/kylegrande/kylegrande/output/snake.svg" alt="Snake animation" />
-
 ###
