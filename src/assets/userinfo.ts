@@ -30,17 +30,22 @@ export const user: user = {
 
 export const links: link[] = [
   {
-    name: "Github",
-    url: "https://github.com/kylegrande/",
-  },
-  {
     name: "LinkedIn",
     url: "https://www.linkedin.com/in/kyleggrande/",
   },
   {
-    name: "Email",
-    url: "",
+    name: "Github",
+    url: "https://github.com/kylegrande/",
   },
+
+  {
+    name: "Resume",
+    url: "https://kyle-grande-resume.s3.amazonaws.com/Kyle_Grande.pdf",
+  },
+  // {
+  //   name: "Email",
+  //   url: "mailto:kyle.g.grande@gmail.com",
+  // },
 ];
 
 export const projects: project[] = [

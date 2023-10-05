@@ -57,17 +57,24 @@ function Projects() {
           >
             Featured Works
           </h2>
-          <div>
+          <div
+            ref={ref}
+            className={` bg-zinc-800 px-5 pb-4 pt-2 rounded-xl hover:shadow-lg hover:shadow-custom-purp duration-500 ease-in-out
+        ${inView ? "animate-fade-in-left" : ""}`}
+          >
             <h3
               ref={ref}
               className={`text-white font-bold text-left text-xl md:text-xl tracking-wider 
-            ${inView ? "animate-fade-in-top" : ""}
+            ${inView ? "animate-fade-in-left" : ""}
             `}
             >
               GPT CoLab
             </h3>
-            <img src={img1} alt="img1" />
-            <p className="text-white">
+            <img ref={ref} src={img1} alt="img1" className={``} />
+            <p
+              ref={ref}
+              className={`text-white ${inView ? "animate-fade-in-left" : ""}`}
+            >
               Thanks to the multi-modal and coding functionality, upon upload it
               decided the which tool would best assist the user.
               <br></br>

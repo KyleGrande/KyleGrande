@@ -36,7 +36,7 @@ function Hero() {
           <div className="flex flex-col gap-5 md:flex-row justify-center items-center">
             <button
               ref={ref}
-              className={`bg-white text-black p-3 hover:shadow-md rounded-lg w-full md:w-auto text-center md:px-20 ${
+              className={`bg-white text-black p-3 hover:shadow-md rounded-lg hover:bg-transparent hover:text-white border border-lg w-full md:w-auto text-center md:px-20 ${
                 inView ? "animate-fade-in-left" : ""
               }`}
             >
@@ -51,7 +51,7 @@ function Hero() {
             </button>
             <button
               ref={ref}
-              className={`border border-gray-300 text-white p-3 hover:shadow-md rounded-lg w-full md:w-auto text-center md:px-20  ${
+              className={`border border-gray-300 text-white p-3 hover:shadow-md rounded-lg w-full hover:bg-white hover:text-custom-purp md:w-auto text-center md:px-20  ${
                 inView ? "animate-fade-in-right" : ""
               }`}
             >

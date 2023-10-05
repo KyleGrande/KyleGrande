@@ -2,8 +2,11 @@ import { links } from "../assets/userinfo";
 
 function Nav() {
   return (
-    <nav className="shadow-black  shadow-md min-h-max">
-      <ul className="flex justify-between items-center py-4 px-6">
+    <nav className="shadow-black  shadow-md md:min-h-max grid grid-cols-2">
+      <div className=" justify-start items-center py-4 px-6 text-white font-bold text-sm md:text-5xl">
+        {/* KYLE GRANDE */}
+      </div>
+      <ul className="flex justify-evenly items-center py-4 px-6 gap-4 text-sm md:text-md font-bold">
         {links.map((link) => (
           <li key={link.url}>
             <a
