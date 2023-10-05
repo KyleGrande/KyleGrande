@@ -14,4 +14,25 @@ body {
     rgba(40, 32, 66, 1),
     rgba(21, 24, 27, 1)
   );
+  height: 100vh;
+}
+@font-face {
+  font-family: "Mona Sans";
+  src: url("../webfonts/MonaSans-Regular.woff2") format("woff2"),
+    url("../webfonts/MonaSans-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Mona Sans";
+  font-weight: 500;
+  src: url("../webfonts/MonaSans-Medium.woff2") format("woff2"),
+    url("../webfonts/MonaSans-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Mona Sans";
+  font-weight: 700;
+  src: url("../webfonts/MonaSans-Bold.woff2") format("woff2"),
+    url("../webfonts/MonaSans-Bold.woff") format("woff");
+}
+body {
+  font-family: "Mona Sans";
 }

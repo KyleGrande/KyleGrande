@@ -2,7 +2,7 @@ import { links } from "../assets/userinfo";
 
 function Nav() {
   return (
-    <nav className="shadow-black shadow-sm">
+    <nav className="shadow-black  shadow-md min-h-max">
       <ul className="flex justify-between items-center py-4 px-6">
         {links.map((link) => (
           <li key={link.url}>
