@@ -1,3 +1,5 @@
+const project3Gif = "/projects/project3/1.mov";
+const project1Gif = "/projects/project1/1.MP4";
 interface user {
   name?: string;
   title?: string;
@@ -9,8 +11,9 @@ interface link {
   name: string;
   url: string;
 }
-interface project {
+export interface project {
   name: string;
+  subtitle?: string;
   description: string;
   gif: string;
   images: string[];
@@ -50,8 +53,23 @@ export const links: link[] = [
 
 export const projects: project[] = [
   {
-    name: "Portfolio",
-    description: "Personal portfolio website",
+    name: "UFIT",
+    subtitle: "AI assisted Fitness App",
+    description: "AI assisted Fitness App",
+    gif: project1Gif,
+    images: [
+      "https://kyle-grande-resume.s3.amazonaws.com/portfolio1.png",
+      "https://kyle-grande-resume.s3.amazonaws.com/portfolio2.png",
+      "https://kyle-grande-resume.s3.amazonaws.com/portfolio3.png",
+    ],
+    link: "https://kylegrande.com",
+    github: "",
+    tags: ["React Native", "TypeScript", "Express", "MongoDB", "AWS", "OpenAI"],
+  },
+  {
+    name: "SentiStock",
+    subtitle: "Serverless Stock Sentiment Analysis",
+    description: "Serverless Stock Sentiment Analysis",
     gif: "https://kyle-grande-resume.s3.amazonaws.com/portfolio.gif",
     images: [
       "https://kyle-grande-resume.s3.amazonaws.com/portfolio1.png",
@@ -60,12 +78,14 @@ export const projects: project[] = [
     ],
     link: "https://kylegrande.com",
     github: "",
-    tags: ["React", "TypeScript", "Vite", "TailwindCSS"],
+    tags: ["React Native", "TypeScript", "Express", "MongoDB", "AWS", "OpenAI"],
   },
   {
     name: "GPTColab",
+    subtitle: "Google Colab notebook for GPT-2 text generation",
     description: "Google Colab notebook for GPT-2 text generation",
-    gif: "https://kyle-grande-resume.s3.amazonaws.com/gptcolab.gif",
+    gif: project3Gif,
+    // gif: "../assets/gptcolab.gif",
     images: [
       "https://kyle-grande-resume.s3.amazonaws.com/gptcolab1.png",
       "https://kyle-grande-resume.s3.amazonaws.com/gptcolab2.png",

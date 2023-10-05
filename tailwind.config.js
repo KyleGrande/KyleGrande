@@ -22,12 +22,26 @@ export default {
         "fade-in-top": "fade-in-top 2s forwards",
         "fade-in-left": "fade-in-left 2s forwards",
         "fade-in-right": "fade-in-right 2s forwards",
+        "fade-in-bottom": "fade-in-bottom 2s forwards",
       },
       keyframes: {
         "fade-in-top": {
           "0%": {
             opacity: "0",
             transform: "translateY(-100px)",
+            visibility: "hidden",
+          },
+          "1%": { visibility: "visible" },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+            visibility: "visible",
+          },
+        },
+        "fade-in-bottom": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(100px)",
             visibility: "hidden",
           },
           "1%": { visibility: "visible" },
@@ -53,7 +67,7 @@ export default {
         "fade-in-right": {
           "0%": {
             opacity: "0",
-            transform: "translateX(100px)",
+            transform: "translateX(150px)",
             visibility: "hidden",
           },
           "1%": { visibility: "visible" },

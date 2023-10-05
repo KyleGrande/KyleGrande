@@ -11,7 +11,7 @@ function Hero() {
     <>
       <div
         ref={ref}
-        className={`bg-custom-purp box-shadow-inner flex items-center justify-center min-h-screen mt-4 md:p-40 `}
+        className={`bg-custom-purp box-shadow-inner flex items-center justify-center min-h-screen mt-2 md:p-40 `}
       >
         <div className="flex flex-col gap-7">
           <h1
