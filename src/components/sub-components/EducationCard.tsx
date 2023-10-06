@@ -1,12 +1,12 @@
 // ProjectCard.tsx
 import { useInView } from "react-intersection-observer";
-import { experience } from "../assets/userinfo";
+import { education } from "../../assets/userinfo";
 
-interface ExperienceCardProps {
-  experience: experience;
+interface EducationCardProps {
+  education: education;
 }
 
-function ExpereinceCard({ experience }: ExperienceCardProps) {
+function EducationCard({ education }: EducationCardProps) {
   const [ref, inView] = useInView({
     triggerOnce: false,
     threshold: 0.01,
@@ -20,30 +20,30 @@ function ExpereinceCard({ experience }: ExperienceCardProps) {
        hover:shadow-custom-purp duration-500 ease-in-out 
 }`}
     >
-      <div className="flex justify-between items-center w-full">
+      <div className="flex flex-row-reverse justify-between items-center w-full">
         <div className="flex flex-col justify-center">
           <h3
-            className={`text-white font-bold text-left text-xl md:text-xl tracking-wider ${
+            className={`text-white font-bold text-right text-xl md:text-xl tracking-wider ${
               inView ? "animate-fade-in-top" : ""
             }`}
           >
-            {experience.name}
+            {education.name}
           </h3>
           <h4
-            className={` text-stone-400 text-left text-l md:text-l tracking-wider ${
+            className={` text-stone-400 text-right text-l md:text-l tracking-wider ${
               inView ? "animate-fade-in-top" : ""
             }`}
           >
-            {experience.title}
+            {education.degree} in {education.focus}
           </h4>
         </div>
         <div>
           <h4
-            className={` text-stone-400 text-left text-l md:text-l tracking-wider ${
+            className={` text-stone-400 text-right text-l md:text-l tracking-wider ${
               inView ? "animate-fade-in-top" : ""
             }`}
           >
-            {experience.startDate} -- {experience.endDate}
+            {education.startDate} -- {education.endDate}
           </h4>
         </div>
       </div>
@@ -51,4 +51,4 @@ function ExpereinceCard({ experience }: ExperienceCardProps) {
   );
 }
 
-export default ExpereinceCard;
+export default EducationCard;

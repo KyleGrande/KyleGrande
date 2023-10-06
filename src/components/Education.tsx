@@ -1,10 +1,10 @@
 // import { user } from "../assets/userinfo";
 import { user } from "../assets/userinfo";
 import { useInView } from "react-intersection-observer";
-import ExperienceCard from "./sub-components/ExperienceCard";
-import { experiences } from "../assets/userinfo";
+import EducationCard from "./sub-components/EducationCard";
+import { educations } from "../assets/userinfo";
 
-function Experience() {
+function Education() {
   const [ref, inView] = useInView({
     triggerOnce: false, // The animation will trigger once
     threshold: 0.01, // The element is in view when 10% of it is visible
@@ -15,35 +15,35 @@ function Experience() {
       <div className="grid grid-col-2 gap-7 bg-custom-dark">
         <div
           ref={ref}
-          className={` box-shadow-inner flex items-end justify-end p-10  md:p-40 md:pb-0  `}
+          className={` box-shadow-inner flex items-start justify-start p-10  md:p-40 md:pb-0   `}
         >
           <div className="flex flex-col gap-7">
             <h1
               ref={ref}
-              className={`text-white font-bold text-right text-5xl md:text-7xl tracking-wider 
-            ${inView ? "animate-fade-in-right" : ""}
+              className={`text-white font-bold text-left text-5xl md:text-7xl tracking-wider 
+            ${inView ? "animate-fade-in-left" : ""}
             `}
             >
-              Experience
+              Education
             </h1>
             <h3
               ref={ref}
-              className={`text-sm md:text-md lg:text-2xl text-right tracking-tight text-gray-500 ${
-                inView ? "animate-fade-in-right" : ""
+              className={`text-sm md:text-md lg:text-2xl text-left tracking-tight text-gray-500 ${
+                inView ? "animate-fade-in-left" : ""
               }`}
             >
-              Co-Founder & Contributor.<br></br>
+              New Graduate.<br></br>
             </h3>
-            <div className="flex flex-col gap-5 md:flex-row justify-end items-end">
+            <div className="flex flex-col gap-5 md:flex-row justify-start items-start">
               <a
                 ref={ref}
-                href={user.linkedin}
+                href={user.resume}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`font-bold text-lg md:text-xl tracking-widest border border-gray-300 text-white p-3 hover:shadow-md rounded-lg w-auto text-center px-20 hover:text-custom-purp hover:bg-white
-                  ${inView ? "animate-fade-in-right" : ""}`}
+                  ${inView ? "animate-fade-in-left" : ""}`}
               >
-                LinkedIn
+                Resume
               </a>
             </div>
             <br></br>
@@ -58,8 +58,8 @@ function Experience() {
           </div>
         </div>
         <div className="md:p-40 md:pb-0 md:pt-0">
-          {experiences.map((experience, index) => (
-            <ExperienceCard key={index} experience={experience} />
+          {educations.map((education, index) => (
+            <EducationCard key={index} education={education} />
           ))}
         </div>
       </div>
@@ -67,4 +67,4 @@ function Experience() {
   );
 }
 
-export default Experience;
+export default Education;

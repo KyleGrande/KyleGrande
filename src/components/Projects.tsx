@@ -1,7 +1,9 @@
 // import { user } from "../assets/userinfo";
 import { user } from "../assets/userinfo";
 import { useInView } from "react-intersection-observer";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "./sub-components/ProjectCard";
+import ProjectCard2 from "./sub-components/ProjectCard2";
+
 import { projects } from "../assets/userinfo";
 
 function Projects() {
@@ -35,22 +37,18 @@ function Projects() {
               Cloud, Web, Mobile, & Data.<br></br> I've done quite a bit.
             </h3>
             <div className="flex flex-col gap-5 md:flex-row justify-start items-start">
-              <button
-                onClick={() => window.open(user.github, "_blank")}
-                className={` border border-gray-300 text-white p-3 hover:shadow-md rounded-lg w-auto text-center px-20 hover:text-custom-purp hover:bg-white
-            ${inView ? "animate-fade-in-left" : ""}`}
+              <a
+                ref={ref}
+                href={user.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={` font-bold text-lg md:text-xl tracking-widest border border-gray-300 text-white p-3 hover:shadow-md rounded-lg w-auto text-center px-20 hover:text-custom-purp hover:bg-white
+                  ${inView ? "animate-fade-in-left" : ""}`}
               >
-                <a
-                  href={user.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-bold text-lg md:text-xl tracking-widest "
-                >
-                  GitHub
-                </a>
-              </button>
+                GitHub
+              </a>
             </div>
-            <br></br>
+            {/* <br></br>
             <h2
               ref={ref}
               className={`text-white font-bold text-left text-xl md:text-xl tracking-wider 
@@ -58,13 +56,24 @@ function Projects() {
             `}
             >
               Featured Works
-            </h2>
+            </h2> */}
           </div>
         </div>
-        <div className="md:p-40 pb-0 pt-0">
-          {projects.map((project, index) => (
-            <ProjectCard key={index} project={project} />
-          ))}
+        <div className="md:p-40 md:pb-0 md:pt-0">
+          <div className="md:p-40 md:pb-0 md:pt-0">
+            {projects
+              .filter((project) => project.featured)
+              .map((project, index) => (
+                <ProjectCard key={index} project={project} />
+              ))}
+          </div>
+        </div>
+        <div className="md:p-40 md:pb-0 md:pt-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 self-center">
+          {projects
+            .filter((project) => !project.featured)
+            .map((project, index) => (
+              <ProjectCard2 key={index} project={project} />
+            ))}
         </div>
       </div>
     </>

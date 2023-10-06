@@ -1,6 +1,6 @@
 // ProjectCard.tsx
 import { useInView } from "react-intersection-observer";
-import { project } from "../assets/userinfo";
+import { project } from "../../assets/userinfo";
 
 interface ProjectCardProps {
   project: project;
@@ -43,7 +43,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         ${inView ? "animate-fade-in-bottom" : ""}`}
         />
       ))} */}
-      {project.featured && (
+      {/* {project.featured && (
         <video
           src={project.gif}
           autoPlay
@@ -53,7 +53,7 @@ function ProjectCard({ project }: ProjectCardProps) {
           className={`min-h-96 max-h-96 self-start rounded-lg min-w-full 
         ${inView ? "animate-fade-in-bottom" : ""}`}
         ></video>
-      )}
+      )} */}
     </div>
   );
 }

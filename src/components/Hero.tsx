@@ -34,38 +34,28 @@ function Hero() {
             {user.description}
           </h3>
           <div className="flex flex-col gap-5 md:flex-row justify-center items-center">
-            <button
-              onClick={() => window.open(user.resume, "_blank")}
+            <a
               ref={ref}
-              className={`bg-white text-black p-3 hover:shadow-md rounded-lg hover:bg-transparent hover:text-white border border-lg w-full md:w-auto text-center md:px-20 ${
+              href={user.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`font-bold text-lg md:text-xl tracking-widest bg-white text-black p-3 hover:shadow-md rounded-lg hover:bg-transparent hover:text-white border border-lg w-full md:w-auto text-center md:px-20 ${
                 inView ? "animate-fade-in-left" : ""
               }`}
             >
-              <a
-                href={user.resume}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-bold text-lg md:text-xl tracking-widest"
-              >
-                Resume
-              </a>
-            </button>
-            <button
-              onClick={() => window.open(user.github, "_blank")}
+              Resume
+            </a>
+            <a
               ref={ref}
-              className={`border border-gray-300 text-white p-3 hover:shadow-md rounded-lg w-full hover:bg-white hover:text-custom-purp md:w-auto text-center md:px-20  ${
+              href={user.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`font-bold text-lg md:text-xl tracking-widest border border-gray-300 text-white p-3 hover:shadow-md rounded-lg w-full hover:bg-white hover:text-custom-purp md:w-auto text-center md:px-20  ${
                 inView ? "animate-fade-in-right" : ""
               }`}
             >
-              <a
-                href={user.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-bold text-lg md:text-xl tracking-widest"
-              >
-                LinkedIn
-              </a>
-            </button>
+              LinkedIn
+            </a>
           </div>
         </div>
         {/* <div className="flex flex-col md:flex-row gap-4 p-4">

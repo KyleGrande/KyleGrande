@@ -28,6 +28,17 @@ export interface project {
 export interface experience {
   name: string;
   title: string;
+  location?: string;
+  description: string;
+  startDate: string;
+  endDate: string;
+  tags: string[];
+}
+export interface education {
+  name: string;
+  degree: string;
+  focus: string;
+  location?: string;
   description: string;
   startDate: string;
   endDate: string;
@@ -113,6 +124,18 @@ export const projects: project[] = [
     github: "",
     tags: ["Python", "PyTesseract", "OpenAI", "GPT-4", "Jupyter"],
   },
+
+  {
+    name: "Anibuddy",
+    featured: false,
+    subtitle: "Native iOS app for tracking Anime",
+    description: "Google Colab notebook for GPT-2 text generation",
+    gif: project3Gif,
+    images: ["/projects/project3/2.png", "/projects/project3/3.png"],
+    link: "",
+    github: "",
+    tags: ["Python", "PyTesseract", "OpenAI", "GPT-4", "Jupyter"],
+  },
   {
     name: "Generative Play",
     featured: false,
@@ -125,9 +148,9 @@ export const projects: project[] = [
     tags: ["Python", "PyTesseract", "OpenAI", "GPT-4", "Jupyter"],
   },
   {
-    name: "Anibuddy",
+    name: "Picksi Plugin",
     featured: false,
-    subtitle: "Native iOS app for tracking Anime",
+    subtitle: "ChatGPT Plugin for recommending enviormenally friendly products",
     description: "Google Colab notebook for GPT-2 text generation",
     gif: project3Gif,
     images: ["/projects/project3/2.png", "/projects/project3/3.png"],
@@ -182,6 +205,18 @@ export const experiences: experience[] = [
     description: "",
     startDate: "07/2021",
     endDate: "01/2022",
+    tags: ["React Native", "TypeScript", "Express", "MongoDB", "AWS", "OpenAI"],
+  },
+];
+
+export const educations: education[] = [
+  {
+    name: "City University of New York, Hunter College",
+    degree: "Bachelor of Art",
+    focus: "Computer Science",
+    description: "",
+    startDate: "06/2020",
+    endDate: "08/2023",
     tags: ["React Native", "TypeScript", "Express", "MongoDB", "AWS", "OpenAI"],
   },
 ];
