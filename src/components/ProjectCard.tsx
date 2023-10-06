@@ -34,7 +34,16 @@ function ProjectCard({ project }: ProjectCardProps) {
       >
         {project.subtitle}
       </h4>
-      <video
+      {/* {project.images.map((image, index) => (
+        <img
+          key={index}
+          src={image}
+          alt={project.name}
+          className={`min-h-96 max-h-96 self-start rounded-lg min-w-full
+        ${inView ? "animate-fade-in-bottom" : ""}`}
+        />
+      ))} */}
+      {/* <video
         src={project.gif}
         autoPlay
         loop
@@ -42,7 +51,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         controls
         className={`min-h-96 max-h-96 self-start rounded-lg min-w-full 
         ${inView ? "animate-fade-in-bottom" : ""}`}
-      ></video>
+      ></video> */}
     </div>
   );
 }

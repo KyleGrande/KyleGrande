@@ -1,4 +1,5 @@
 // import { user } from "../assets/userinfo";
+import { user } from "../assets/userinfo";
 import { useInView } from "react-intersection-observer";
 import ProjectCard from "./ProjectCard";
 import { projects } from "../assets/userinfo";
@@ -11,7 +12,7 @@ function Projects() {
 
   return (
     <>
-      <div className="grid grid-col-2 gap-7 bg-custom-linear bg-gradient-to-b from-custom-purp from-10% via-custom-dark to-custom-dark">
+      <div className="grid grid-col-2 gap-7 bg-custom-linear bg-gradient-to-b from-custom-purp from-5% via-custom-dark to-custom-dark">
         <div
           ref={ref}
           className={` box-shadow-inner flex items-start justify-start p-10  md:p-40 md:pb-0  `}
@@ -35,11 +36,12 @@ function Projects() {
             </h3>
             <div className="flex flex-col gap-5 md:flex-row justify-start items-start">
               <button
+                onClick={() => window.open(user.github, "_blank")}
                 className={` border border-gray-300 text-white p-3 hover:shadow-md rounded-lg w-auto text-center px-20 hover:text-custom-purp hover:bg-white
             ${inView ? "animate-fade-in-left" : ""}`}
               >
                 <a
-                  href={""}
+                  href={user.github}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-bold text-lg md:text-xl tracking-widest "
