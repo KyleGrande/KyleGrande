@@ -15,6 +15,7 @@ interface link {
 }
 export interface project {
   name: string;
+  featured: boolean;
   subtitle?: string;
   description: string;
   gif: string;
@@ -66,6 +67,7 @@ export const links: link[] = [
 export const projects: project[] = [
   {
     name: "UFIT",
+    featured: true,
     subtitle: "AI assisted Fitness App",
     description: "AI assisted Fitness App",
     gif: project1Gif,
@@ -76,6 +78,7 @@ export const projects: project[] = [
   },
   {
     name: "SentiStock",
+    featured: true,
     subtitle: "Serverless Stock Sentiment Analysis",
     description: "Serverless Stock Sentiment Analysis",
     gif: project2Gif,
@@ -90,7 +93,63 @@ export const projects: project[] = [
   },
   {
     name: "GPTColab",
+    featured: true,
     subtitle: "Google Colab notebook for GPT-2 text generation",
+    description: "Google Colab notebook for GPT-2 text generation",
+    gif: project3Gif,
+    images: ["/projects/project3/2.png", "/projects/project3/3.png"],
+    link: "",
+    github: "",
+    tags: ["Python", "PyTesseract", "OpenAI", "GPT-4", "Jupyter"],
+  },
+  {
+    name: "Instalist",
+    featured: false,
+    subtitle: "Cross-listing app for selling on multiple platforms",
+    description: "Google Colab notebook for GPT-2 text generation",
+    gif: project3Gif,
+    images: ["/projects/project3/2.png", "/projects/project3/3.png"],
+    link: "",
+    github: "",
+    tags: ["Python", "PyTesseract", "OpenAI", "GPT-4", "Jupyter"],
+  },
+  {
+    name: "Generative Play",
+    featured: false,
+    subtitle: "Procedurally generated text-based game",
+    description: "Google Colab notebook for GPT-2 text generation",
+    gif: project3Gif,
+    images: ["/projects/project3/2.png", "/projects/project3/3.png"],
+    link: "",
+    github: "",
+    tags: ["Python", "PyTesseract", "OpenAI", "GPT-4", "Jupyter"],
+  },
+  {
+    name: "Anibuddy",
+    featured: false,
+    subtitle: "Native iOS app for tracking Anime",
+    description: "Google Colab notebook for GPT-2 text generation",
+    gif: project3Gif,
+    images: ["/projects/project3/2.png", "/projects/project3/3.png"],
+    link: "",
+    github: "",
+    tags: ["Python", "PyTesseract", "OpenAI", "GPT-4", "Jupyter"],
+  },
+  {
+    name: "Citi-Bike Analysis",
+    featured: false,
+    subtitle: "Data analysis of Citi-Bike data",
+    description: "Google Colab notebook for GPT-2 text generation",
+    gif: project3Gif,
+    images: ["/projects/project3/2.png", "/projects/project3/3.png"],
+    link: "",
+    github: "",
+    tags: ["Python", "PyTesseract", "OpenAI", "GPT-4", "Jupyter"],
+  },
+  {
+    name: "EchoNote",
+    featured: false,
+    subtitle: "Real time speech-to-text note taking app",
     description: "Google Colab notebook for GPT-2 text generation",
     gif: project3Gif,
     images: ["/projects/project3/2.png", "/projects/project3/3.png"],
@@ -101,6 +160,14 @@ export const projects: project[] = [
 ];
 
 export const experiences: experience[] = [
+  {
+    name: "Open Source Contributions",
+    title: "FreeCodeCamp, Ansible, Crowdin",
+    description: "",
+    startDate: "10/2023",
+    endDate: "Present",
+    tags: ["React Native", "TypeScript", "Express", "MongoDB", "AWS", "OpenAI"],
+  },
   {
     name: "KDone Design",
     title: "Software Engineer",

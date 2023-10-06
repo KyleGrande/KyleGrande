@@ -61,7 +61,7 @@ function Experience() {
             </h2> */}
           </div>
         </div>
-        <div className="p-40 pb-0 pt-0">
+        <div className="md:p-40 pb-0 pt-0">
           {experiences.map((experience, index) => (
             <ExperienceCard key={index} experience={experience} />
           ))}

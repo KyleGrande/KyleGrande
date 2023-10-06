@@ -11,16 +11,16 @@ function Hero() {
     <>
       <div
         ref={ref}
-        className={`bg-custom-purp box-shadow-inner flex items-center justify-center min-h-screen mt-2 md:p-40 `}
+        className={`bg-custom-purp box-shadow-inner flex items-center justify-center min-h-screen md:p-40 `}
       >
         <div className="flex flex-col gap-7">
           <h1
             ref={ref}
-            className={`text-white font-bold text-center text-5xl md:text-7xl tracking-wider 
+            className={`text-white font-bold text-center text-5xl md:text-5xl tracking-wider 
             ${inView ? "animate-fade-in-top" : ""}
             `}
           >
-            {user.name}
+            {user.name} | {user.title}
           </h1>
           {/* <h2 className="text-white text-xl md:text-3xl self-center tracking-wide">
             {user.title}

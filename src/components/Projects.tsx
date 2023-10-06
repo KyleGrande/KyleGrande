@@ -61,7 +61,7 @@ function Projects() {
             </h2>
           </div>
         </div>
-        <div className="p-40 pb-0 pt-0">
+        <div className="md:p-40 pb-0 pt-0">
           {projects.map((project, index) => (
             <ProjectCard key={index} project={project} />
           ))}

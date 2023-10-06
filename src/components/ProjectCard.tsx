@@ -21,14 +21,14 @@ function ProjectCard({ project }: ProjectCardProps) {
 }`}
     >
       <h3
-        className={`text-white font-bold text-left text-xl md:text-xl tracking-wider ${
+        className={`text-white font-bold  text-center self-center text-xl md:text-xl tracking-wider ${
           inView ? "animate-fade-in-top" : ""
         }`}
       >
         {project.name}
       </h3>
       <h4
-        className={` text-stone-400 text-left text-l md:text-l tracking-wider ${
+        className={` text-stone-400 text-center self-center text-l md:text-l tracking-wider ${
           inView ? "animate-fade-in-top" : ""
         }`}
       >
@@ -43,15 +43,17 @@ function ProjectCard({ project }: ProjectCardProps) {
         ${inView ? "animate-fade-in-bottom" : ""}`}
         />
       ))} */}
-      <video
-        src={project.gif}
-        autoPlay
-        loop
-        muted
-        controls
-        className={`min-h-96 max-h-96 self-start rounded-lg min-w-full 
+      {project.featured && (
+        <video
+          src={project.gif}
+          autoPlay
+          loop
+          muted
+          controls
+          className={`min-h-96 max-h-96 self-start rounded-lg min-w-full 
         ${inView ? "animate-fade-in-bottom" : ""}`}
-      ></video>
+        ></video>
+      )}
     </div>
   );
 }
