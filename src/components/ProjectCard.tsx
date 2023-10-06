@@ -43,7 +43,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         ${inView ? "animate-fade-in-bottom" : ""}`}
         />
       ))} */}
-      {/* <video
+      <video
         src={project.gif}
         autoPlay
         loop
@@ -51,7 +51,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         controls
         className={`min-h-96 max-h-96 self-start rounded-lg min-w-full 
         ${inView ? "animate-fade-in-bottom" : ""}`}
-      ></video> */}
+      ></video>
     </div>
   );
 }

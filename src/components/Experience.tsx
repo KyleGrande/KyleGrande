@@ -51,14 +51,14 @@ function Experience() {
               </button>
             </div>
             <br></br>
-            <h2
+            {/* <h2
               ref={ref}
               className={`text-white font-bold text-right text-xl md:text-xl tracking-wider 
             ${inView ? "animate-fade-in-top" : ""}
             `}
             >
               Featured Works
-            </h2>
+            </h2> */}
           </div>
         </div>
         <div className="p-40 pb-0 pt-0">

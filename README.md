@@ -10,6 +10,15 @@
 
 ###
 
-<p align="left">Currently working on giving back to the open source community. Through GitHub contributions</p>
+<p align="left">Currently working on giving back to the open source community through GitHub contributions</p>
+
+<h3 align="left">My Interest:</h3>
+<p align="left"> CLOUD - Serverlesss & Microservices </p>
+<p align="left"> AI - LLM & RL </p>
+<p align="left"> ML - Data & Analysis </p>
+<p align="left"> WEB - Frontend & Backend </p>
+
+
+
 
 ###

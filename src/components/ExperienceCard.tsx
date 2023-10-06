@@ -20,20 +20,33 @@ function ExpereinceCard({ experience }: ExperienceCardProps) {
        hover:shadow-custom-purp duration-500 ease-in-out 
 }`}
     >
-      <h3
-        className={`text-white font-bold text-left text-xl md:text-xl tracking-wider ${
-          inView ? "animate-fade-in-top" : ""
-        }`}
-      >
-        {experience.name}
-      </h3>
-      <h4
-        className={` text-stone-400 text-left text-l md:text-l tracking-wider ${
-          inView ? "animate-fade-in-top" : ""
-        }`}
-      >
-        {experience.title}
-      </h4>
+      <div className="flex justify-between items-center w-full">
+        <div className="flex flex-col justify-center">
+          <h3
+            className={`text-white font-bold text-left text-xl md:text-xl tracking-wider ${
+              inView ? "animate-fade-in-top" : ""
+            }`}
+          >
+            {experience.name}
+          </h3>
+          <h4
+            className={` text-stone-400 text-left text-l md:text-l tracking-wider ${
+              inView ? "animate-fade-in-top" : ""
+            }`}
+          >
+            {experience.title}
+          </h4>
+        </div>
+        <div>
+          <h4
+            className={` text-stone-400 text-left text-l md:text-l tracking-wider ${
+              inView ? "animate-fade-in-top" : ""
+            }`}
+          >
+            {experience.startDate} -- {experience.endDate}
+          </h4>
+        </div>
+      </div>
     </div>
   );
 }

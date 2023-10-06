@@ -102,6 +102,14 @@ export const projects: project[] = [
 
 export const experiences: experience[] = [
   {
+    name: "KDone Design",
+    title: "Software Engineer",
+    description: "",
+    startDate: "09/2023",
+    endDate: "Present",
+    tags: ["React Native", "TypeScript", "Express", "MongoDB", "AWS", "OpenAI"],
+  },
+  {
     name: "Thrift LLC",
     title: "Co-Founder",
     description: "",
