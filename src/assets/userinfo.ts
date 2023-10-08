@@ -1,6 +1,6 @@
-const project3Gif = "/projects/project3/1.mov";
-const project2Gif = "/projects/project2/1.png";
-const project1Gif = "/projects/project1/1.MP4";
+// const project3Gif = "/projects/project3/1.mov";
+// const project2Gif = "/projects/project2/1.png";
+// const project1Gif = "/projects/project1/1.MP4";
 interface user {
   name?: string;
   title?: string;
@@ -18,7 +18,7 @@ export interface project {
   featured: boolean;
   subtitle?: string;
   description: string;
-  gif: string;
+  gif?: string;
   images: string[];
   link: string;
   github: string;
@@ -81,7 +81,7 @@ export const projects: project[] = [
     featured: true,
     subtitle: "AI assisted Fitness App",
     description: "AI assisted Fitness App",
-    gif: project1Gif,
+    // gif: project1Gif,
     images: [],
     link: "https://kylegrande.com",
     github: "",
@@ -92,7 +92,7 @@ export const projects: project[] = [
     featured: true,
     subtitle: "Serverless Stock Sentiment Analysis",
     description: "Serverless Stock Sentiment Analysis",
-    gif: project2Gif,
+    // gif: project2Gif,
     images: [
       "/projects/project2/1.png",
       "/projects/project2/2.png",
@@ -105,9 +105,9 @@ export const projects: project[] = [
   {
     name: "GPTColab",
     featured: true,
-    subtitle: "Google Colab notebook for GPT-2 text generation",
+    subtitle: "Enchaned ChatGPT",
     description: "Google Colab notebook for GPT-2 text generation",
-    gif: project3Gif,
+    // gif: project3Gif,
     images: ["/projects/project3/2.png", "/projects/project3/3.png"],
     link: "",
     github: "",
@@ -118,7 +118,7 @@ export const projects: project[] = [
     featured: false,
     subtitle: "Cross-listing app for selling on multiple platforms",
     description: "Google Colab notebook for GPT-2 text generation",
-    gif: project3Gif,
+    // gif: project3Gif,
     images: ["/projects/project3/2.png", "/projects/project3/3.png"],
     link: "",
     github: "",
@@ -130,7 +130,7 @@ export const projects: project[] = [
     featured: false,
     subtitle: "Native iOS app for tracking Anime",
     description: "Google Colab notebook for GPT-2 text generation",
-    gif: project3Gif,
+    // gif: project3Gif,
     images: ["/projects/project3/2.png", "/projects/project3/3.png"],
     link: "",
     github: "",
@@ -141,7 +141,7 @@ export const projects: project[] = [
     featured: false,
     subtitle: "Procedurally generated text-based game",
     description: "Google Colab notebook for GPT-2 text generation",
-    gif: project3Gif,
+    // gif: project3Gif,
     images: ["/projects/project3/2.png", "/projects/project3/3.png"],
     link: "",
     github: "",
@@ -152,7 +152,7 @@ export const projects: project[] = [
     featured: false,
     subtitle: "ChatGPT Plugin for recommending enviormenally friendly products",
     description: "Google Colab notebook for GPT-2 text generation",
-    gif: project3Gif,
+    // gif: project3Gif,
     images: ["/projects/project3/2.png", "/projects/project3/3.png"],
     link: "",
     github: "",
@@ -163,7 +163,7 @@ export const projects: project[] = [
     featured: false,
     subtitle: "Data analysis of Citi-Bike data",
     description: "Google Colab notebook for GPT-2 text generation",
-    gif: project3Gif,
+    // gif: project3Gif,
     images: ["/projects/project3/2.png", "/projects/project3/3.png"],
     link: "",
     github: "",
@@ -174,7 +174,7 @@ export const projects: project[] = [
     featured: false,
     subtitle: "Real time speech-to-text note taking app",
     description: "Google Colab notebook for GPT-2 text generation",
-    gif: project3Gif,
+    // gif: project3Gif,
     images: ["/projects/project3/2.png", "/projects/project3/3.png"],
     link: "",
     github: "",
