@@ -10,7 +10,7 @@
 
 ###
 
-<p align="left">Currently working on giving back to the open source community through GitHub contributions</p>
+<p align="left"></p>
 
 <h3 align="left">My Interest:</h3>
 <p align="left"> CLOUD - Serverlesss & Microservices </p>
