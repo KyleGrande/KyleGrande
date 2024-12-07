@@ -7,18 +7,3 @@
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
   </a>
 </div>
-
-###
-
-<p align="left"></p>
-
-<h3 align="left">My Interest:</h3>
-<p align="left"> CLOUD - Serverlesss & Microservices </p>
-<p align="left"> AI - LLM & RL </p>
-<p align="left"> ML - Data & Analysis </p>
-<p align="left"> WEB - Frontend & Backend </p>
-
-
-
-
-###
