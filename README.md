@@ -1,4 +1,4 @@
-<h2 align="left">Kyle Grande - Software Engineer</h2>
+<h2 align="left">Kyle Grande - Software Engineer, OSS Contributor</h2>
 <a href="https://github.com/kggrande" target="_blank">
 KGGrande - Work GitHub Account
 </a>
